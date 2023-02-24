@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  background: top -350px left -350px/600px no-repeat url("../images/bg-pattern-top.svg"), hsl(185deg, 75%, 39%) bottom -250px right -300px/500px no-repeat url("../images/bg-pattern-bottom.svg");
+}
+
+.box {
+  width: 330px;
+  height: 370px;
+  text-align: center;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.box__bg {
+  position: relative;
+  height: 35%;
+  width: 100%;
+  background: url("../images/bg-pattern-card.svg");
+}
+.box__bg img {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  border: 5px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.box__name {
+  margin-top: 60px;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  color: hsl(229deg, 23%, 23%);
+}
+.box__name span {
+  color: hsl(227deg, 10%, 46%);
+  font-weight: 500;
+}
+.box__location {
+  margin: 10px 0 30px;
+  font-size: 14px;
+  color: hsl(227deg, 10%, 46%);
+}
+.box__hrline {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(0deg, 0%, 90%);
+  border: none;
+}
+.box__social {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+  letter-spacing: 1px;
+}
+.box__social span {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: hsl(229deg, 23%, 23%);
+}
+.box__social p {
+  font-size: 10px;
+  color: hsl(227deg, 10%, 46%);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+footer .attribution a {
+  color: hsl(0deg, 0%, 90%);
+}
+
+@media (min-width: 576px) {
+  body {
+    background: top -300px left -300px/600px no-repeat url("../images/bg-pattern-top.svg"), hsl(185deg, 75%, 39%) bottom -200px right -300px/500px no-repeat url("../images/bg-pattern-bottom.svg");
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background: top -350px left -300px/700px no-repeat url("../images/bg-pattern-top.svg"), hsl(185deg, 75%, 39%) bottom -250px right -350px/700px no-repeat url("../images/bg-pattern-bottom.svg");
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background: top -350px left -200px/700px no-repeat url("../images/bg-pattern-top.svg"), hsl(185deg, 75%, 39%) bottom -250px right -250px/700px no-repeat url("../images/bg-pattern-bottom.svg");
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background: top -300px left -50px/700px no-repeat url("../images/bg-pattern-top.svg"), hsl(185deg, 75%, 39%) bottom -300px right -100px/700px no-repeat url("../images/bg-pattern-bottom.svg");
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    background: top -300px left 0/700px no-repeat url("../images/bg-pattern-top.svg"), hsl(185deg, 75%, 39%) bottom -300px right 0/700px no-repeat url("../images/bg-pattern-bottom.svg");
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,106 @@
+@use './colors' as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-height: 100vh;
+	font-family: 'Kumbh Sans', sans-serif;
+    background:  top -350px left -350px / 600px no-repeat url("../images/bg-pattern-top.svg"), $darkcyan bottom -250px right -300px  / 500px no-repeat url("../images/bg-pattern-bottom.svg");
+}
+
+.box {
+	width: 330px;
+	height: 370px;
+	text-align: center;
+	background-color: $white;
+	border-radius: 15px;
+	overflow: hidden;
+
+	&__bg {
+		position: relative;
+		height: 35%;
+		width: 100%;
+		background: url('../images/bg-pattern-card.svg');
+
+		img {
+			position: absolute;
+			bottom: -50px;
+			left: 50%;
+			border: 5px solid $white;
+			border-radius: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__name {
+		margin-top: 60px;
+        font-size: 18px;
+        letter-spacing: .8px;
+        color: $verydarkdesaturatedblue;
+
+        span {
+            color: $darkgrayishblue;
+            font-weight: 500;
+        }
+	}
+
+    &__location {
+        margin: 10px 0 30px;
+        font-size: 14px;
+        color: $darkgrayishblue;
+    }
+
+    &__hrline {
+        height: 1px;
+        width: 100%;
+        background-color: $lightgray;
+        border: none;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 30px 0;
+        letter-spacing: 1px;
+
+        span {
+            display: block;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: $verydarkdesaturatedblue;
+        }
+
+        p{
+            font-size: 10px;
+            color: $darkgrayishblue;
+        }
+    }
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+
+	.attribution {
+		font-size: 11px;
+		text-align: center;
+        color: $white;
+	}
+	.attribution a {
+		color: $lightgray;
+	}
+}
+
+@import './desktop';
